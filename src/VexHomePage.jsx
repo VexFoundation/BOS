@@ -1,11 +1,6 @@
 const BgVex =
   "https://aquamarine-official-jay-421.mypinata.cloud/ipfs/QmTK8WdS2vYgnMFKNonzQBvfSshRh1CwZP1feR2d8UaJoz";
 
-/* const fontCss = fetch("https://fonts.googleapis.com/css?family=Rowdies").body;
-if (!fontCss) {
-  return;
-} */
-
 const Hero = styled.div`
 border: 0;
 box-sizing: border-box;
@@ -13,8 +8,8 @@ margin: 0;
 background: black;
 background-image: url(${BgVex});
 background-size: cover;
-width: 100vw;
-height: 100vh;
+width: 100%;
+min-height: 100vh;
 display: flex;
 flex-direction:column;
 justify-content: center;
@@ -24,10 +19,10 @@ gap: 0.5rem;
 `;
 
 const Title = styled.h1`
-font-size: 8rem;
+font-size: 4rem;
 color: red;
 font-weight: 800;
-font-family: ${fontCss}, sans-serif;
+font-family: Verdana, sans-serif;
 `;
 
 const SubTitle = styled.h2`
@@ -51,10 +46,7 @@ justify-content: center;
 return (
   <Hero>
     <Title>VEX Esports</Title>
-    <SubTitle>
-      Join our super platform for Esports betting and enjoy all the freedom and
-      security of Web3.
-    </SubTitle>
+    <SubTitle>Esports betting for gamers, by gamers.</SubTitle>
 
     <Widget
       src="near/widget/DIG.Button"
