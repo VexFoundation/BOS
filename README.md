@@ -13,8 +13,11 @@ You can download the walkthrough here: [VEX_BOS_Walkthrough.mp4](https://github.
 
 ## Hackathon Team
 Owen
+
 Amanda 
+
 Yashank
+
 Quezon
 
 ## Screenshots
