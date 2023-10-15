@@ -33,11 +33,11 @@ Betting page, you can click on a match only when signed into a wallet so that yo
 ![image](https://github.com/VexFoundation/BOS/assets/131614467/a7d7207b-18aa-4056-8880-682b732a851a)
 
 
-When you select the bet amount and team the odds and potential winnings will dynamically change with your input. This is done by calling a view method to get the potential winnings.
+When you select the bet amount and team, the odds and potential winnings will dynamically change with your input. This is done by calling a view method to get the potential winnings. You can click the return arrow to return to the betting page.
 
 ![image](https://github.com/VexFoundation/BOS/assets/131614467/bb64c65b-934b-4a12-9f91-5b5cbf26a75a)
 
 
-When you click "place bet" you are redirected to this page to confirm the transaction then sign with your wallet, this calls a make_bet method in the smart contract with the match name, team name and bet amount as parameters.
+When you click "place bet", you are redirected to this page to confirm the transaction and then sign with your wallet, this calls a make_bet method in the smart contract with the match name, team name and bet amount as parameters.
 
 ![image](https://github.com/VexFoundation/BOS/assets/131614467/50ac9eca-6a3e-4dc2-96a1-60fb2a687648)
