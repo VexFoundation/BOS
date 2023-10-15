@@ -12,12 +12,9 @@ Here is the code for the backend (not created during this hackathon): https://gi
 You can download the walkthrough here: [VEX_BOS_Walkthrough.mp4](https://github.com/VexFoundation/BOS/blob/main/VEX_BOS_Walkthrough.mp4)https://github.com/VexFoundation/BOS/blob/main/VEX_BOS_Walkthrough.mp4
 
 ## Hackathon Team
-Owen
-
-Amanda 
-
-Yashank
-
+Owen,
+Amanda, 
+Yashank,
 Quezon
 
 ## Screenshots
