@@ -50,34 +50,33 @@ color: color: #ff1f1f;
 `;
 
 return (
-  <div>
+  <BetSlip>
     <h1>Bet Slip</h1>
-    <p>
-      Match: {match[1]} vs {match[3]}
-    </p>
-    <p>Date: {match[0].slice(-10)}</p>
-    <p>Bet Amount: {betAmount}</p>
-    <p>
-      Odds:
+    <BetGrid>
+      <Labels>Match: </Labels>
+      {match[1]} vs {match[3]}
+      <Labels>Date: </Labels>
+      {match[0].slice(-10)}
+      <Labels>Bet Amount: </Labels>
+      {betAmount ? betAmount : "0"}
+      <Labels>Odds:</Labels>
       {potentialWinnings !== null &&
         potentialWinnings !== undefined &&
         Math.round((potentialWinnings * 100) / betAmount) / 100}
-      Ⓝ
-    </p>
-    <p>
-      Potential Winnings:
+      Ⓝ<Labels>Potential Winnings:</Labels>
       {potentialWinnings !== null &&
         potentialWinnings !== undefined &&
         Math.round(potentialWinnings * 100) / 100}
       Ⓝ
-    </p>
-
-    <button
-      onClick={() => handleClick()}
-      disabled={potentialWinnings == null || potentialWinnings == undefined}
-    >
-      Place Bet
-    </button>
-  </div>
+    </BetGrid>
+    <PlaceBetButton>
+      <button
+        className="btn btn-danger"
+        onClick={() => handleClick()}
+        disabled={potentialWinnings == null || potentialWinnings == undefined}
+      >
+        Place Bet
+      </button>
+    </PlaceBetButton>
+  </BetSlip>
 );
-
