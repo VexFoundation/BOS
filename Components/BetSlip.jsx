@@ -26,6 +26,29 @@ const handleClick = () => {
   Near.call(call_contract, "ft_transfer_call", args, 300 * terra, 1);
 };
 
+const BetSlip = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: left;
+padding: 2rem;
+`;
+
+const PlaceBetButton = styled.div`
+display: flex;
+justify-content: right;
+grid-column: 1/3;
+`;
+
+const BetGrid = styled.div`
+display: grid;
+grid-template-columns: 50% 50%;
+`;
+
+const Labels = styled.span`
+color: color: #ff1f1f;
+`;
+
 return (
   <div>
     <h1>Bet Slip</h1>
